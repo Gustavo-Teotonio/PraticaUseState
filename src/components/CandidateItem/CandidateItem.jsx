@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import styles from './CandidateItem.module.css';
 
 const CandidateItem = ({ item, toggleBought, removeItem, editItem }) => {
-    const [isEditing, setIsEditing] = useState(false);
-    const [newName, setNewName] = useState(item.name);
     const [newQuantity, setNewQuantity] = useState(item.quantity);
 
     const voteEdit = () => {

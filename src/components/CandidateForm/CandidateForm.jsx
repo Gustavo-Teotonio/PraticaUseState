@@ -3,7 +3,6 @@ import styles from './CandidateForm.module.css';
 
 const CandidateForm = ({ addItem }) => {
     const [name, setName] = useState('');
-    const [quantity, setQuantity] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,13 +25,6 @@ const CandidateForm = ({ addItem }) => {
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Nome do Candidato"
             />
-            {/* <input
-                type="number"
-                className={styles.inputQuantity}
-                value={quantity}
-                onChange={(e) => setQuantity(e.target.value)}
-                placeholder="Votos"
-            /> */}
             <p className={styles.addButton} onClick={handleSubmit}>
                 Adicionar
             </p>
