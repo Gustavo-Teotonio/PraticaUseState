@@ -1,0 +1,52 @@
+.addItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.inputName, .inputQuantity {
+    height: 40px;
+    width: 100%;
+    max-width: 180px;
+    padding: 10px;
+    font-size: 16px;
+    color: #aaa;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputName:focus, .inputQuantity:focus {
+    border-color: #357ABD;
+    box-shadow: 0 0 5px rgba(53, 122, 189, 0.5);
+}
+
+.addButton {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 15px;
+}
+
+.addButton:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+}
+
+.addButton:active {
+    background-color: #285A8C;
+    transform: scale(0.95);
+}

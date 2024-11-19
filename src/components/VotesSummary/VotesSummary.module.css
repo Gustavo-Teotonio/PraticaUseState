@@ -1,0 +1,10 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.votos{
+    color: #f3f3f3
+}

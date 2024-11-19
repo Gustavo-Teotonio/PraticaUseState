@@ -1,0 +1,123 @@
+* {
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    position: relative;
+    background-color: lightgray;
+    max-width: 400px;
+    width: 100%;
+    height: fit-content;
+    margin: 15px 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-word;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.item.slideOutRight {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.item.slideInLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideInLeft 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.itemText {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 10px;
+    line-height: 1.4;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.input {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border: 2px solid #16131a;
+    border-radius: .5rem;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #4A90E2;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: .3rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editButton {
+    background-color: #c4ab2d;
+    padding: 8px 12px; /* Aumentado o padding para os botões de alterar */
+}
+
+.removeButton {
+    background-color: #c42d2d;
+    padding: 8px 12px; /* Aumentado o padding para os botões de remover */
+}
+
+.saveButton {
+    background-color: #2dc43c;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    margin-left: 10px;
+}

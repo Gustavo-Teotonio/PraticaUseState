@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Concert One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    --background: linear-gradient(to bottom right, #4A90E2, #5AD4FB); /* Tons de azul */
+    width: 500px;
+    min-height: 700px;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardInfo {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+    height: fit-content;
+    overflow: visible;
+    border-radius: .7rem;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    color: #4A90E2; /* Azul para contraste */
+    letter-spacing: .1em;
+    font-size: 40px;
+    font-family: "Comic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.cardHeader {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.inputTasks {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.votos{
+    color: #f3f3f3
+}

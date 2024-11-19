@@ -1,0 +1,37 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.allTasks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Aumentei a margem superior para dar mais espaçamento */
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    max-width: 420px; /* Ajuste para garantir que a largura não ultrapasse 420px */
+    min-height: 400px;
+    height: fit-content;
+    border-radius: .5rem;
+    padding: 15px; /* Adicionei padding para melhorar o espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra suave para dar mais profundidade */
+    overflow: hidden; /* Para evitar que conteúdos excedam a área visível */
+    transition: transform 0.3s ease; /* Transição para efeitos visuais */
+}
+
+.tasks:hover {
+    transform: scale(1.02); /* Um efeito de aumento ao passar o mouse */
+}
+
+@media (max-width: 480px) {
+    .tasks {
+        width: 90%; /* Ajuste responsivo para telas pequenas */
+    }
+}
